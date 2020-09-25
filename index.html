@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Hello, world!</title>
+	<style>
+		.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl 
+		{
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+		.navbar 
+		{
+			padding: .5rem 3rem;
+		}
+		.custom-select 
+		{
+			border-radius: 1.25rem;
+		}
+		.nav-link 
+		{
+			display: block;
+			padding: 1.5rem 1rem;
+		}
+		.mr-auto,.mx-auto 
+		{
+			margin-right: auto!important;
+			margin-top: 10px;
+		}
+		.container-fluid
+		{
+			max-width:1510px !important;
+			padding:0px 0px 0px 0px;
+		}
+		.container
+		{
+			max-width:1540px !important;
+			/*border:5px solid red;*/
+			padding:5px 0px 0px 0px;
+		}
+		.slidesed
+		{
+			padding-top:135px;
+		}
+		.carousel-item
+		{
+			transition:transform 1s ease-in-out;
+		}
+		ul li:hover .dropdown-menu
+		{
+			display:block;
+		}
+		ul li:hover 
+		{
+			border-bottom:5px solid white;
+			border-radius:2%;
+		}
+		.active
+		{
+			font-weight:bolder;
+			font-size:17px;
+		}
+		.aa
+		{
+			font-size:23px;
+			padding-right:8px;
+		}
+		.carousel-indicators .active 
+		{
+			background-color: red;
+		}
+		.carousel-control-next-icon, .carousel-control-prev-icon 
+		{
+			width: 80px;
+			height: 70px;
+		}
+		.second-nav
+		{
+			display:none;
+		}
+		@media screen and (min-width: 992px)
+		{
+			.navbar-expand-lg .navbar-nav .nav-link
+			{
+				padding-right: 3.5rem;
+				padding-left: 2.5rem;
+			}
+			.bb
+			{
+				width:100%;
+				height:700px;
+			}
+		}
+		.ww
+		{
+			display:none;
+		}
+		@media screen and (max-width:1099px)
+		{
+			.vv
+			{
+				display:none;
+			}
+			.ww
+			{
+				display:block;
+			}
+		}	
+		.navbar-toggler 
+		{
+			margin-right: 50px;
+		}
+		@media screen and (max-width:992px)
+		{
+			.first-nav
+			{
+				display:none;
+			}
+			.second-nav
+			{
+				display:block;
+				width:108%;
+				text-align:center;
+			}
+			.slidesed
+			{
+				padding-top:0px;
+			}
+		}
+		@media screen and (max-width:509px)
+		{
+			.navbar-toggler 
+			{
+				margin-right:30px;
+			}
+		}
+		@media screen and (max-width:844px)
+		{
+			.oo
+			{
+				display:none;
+			}
+			.ll
+			{
+				text-align:center;
+			}
+		}
+		.carousel-indicators li
+		{
+			height: 24px;
+			margin-left: 14px;
+			background-color: rgb(0 255 250 / 50%);
+		}
+		.M
+		{
+			float:left;
+		}
+		.N
+		{
+			float:left;
+			margin:28px 0px 0px 20px;
+		}
+		ol
+		{
+			font-size:30px;
+			color:white;
+			list-style-type:none;
+		}
+		ol > li
+		{
+			padding:25px 0px 0px 0px;
+		}
+		ol > li > a
+		{
+			color:white;
+			font-size:18px;
+			text-decoration:none;
+		}
+		ol > li > a:hover
+		{
+			text-decoration:underline;
+			color:yellow;
+		}
+	</style>
+  </head>
+  <body>
+	
+	<!--NAVIGATION BAR-->
+    <div class="container-fluid">
+		<nav class="navbar fixed-top first-nav navbar-expand-lg navbar-dark bg-dark">
+			<img src="15.jpg" class="mr-auto bg-white" width="120px" height="110px" style="border-radius:40%;"/>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-home aa"></i>HOME
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-newspaper-o aa"></i>LATEST UPDATES
+						</a>
+					</li>
+					<li class="nav-item dropdown text-center">
+						<a class="nav-link dropdown-toggle" href="#ABC" data-toggle="dropdown">
+							<i class="fa fa-link aa"></i>QUICK LINKS
+						</a>
+						<div class="dropdown-menu" id="ABC">
+							<a class="dropdown-item" href="#"><i class="fa fa-registered aa"></i>REGISTER</a>
+							<a class="dropdown-item" href="#"><i class="fa fa-sign-in aa"></i>SIGN-IN</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"><i class="fa fa-sticky-note aa"></i>PUBLISH NOTES</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-users aa"></i>OUR TEAM
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-address-book aa"></i>CONTACT
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="container-fluid">
+		<nav class="navbar second-nav navbar-expand-lg navbar-dark bg-dark">
+		<div class="row justify-content-around">
+			<img src="15.jpg" class="mr-auto bg-white" width="120px" height="110px" style="border-radius:40%;"/>
+			<button class="navbar-toggler " style="height:50px;margin-top:30px" data-toggle="collapse" data-target="#navbarSupportedContent">
+				<span class="navbar-toggler-icon "></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-home aa"></i>HOME
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-newspaper-o aa"></i>LATEST UPDATES
+						</a>
+					</li>
+					<li class="nav-item dropdown text-center">
+						<a class="nav-link dropdown-toggle" href="#ABC" data-toggle="dropdown">
+							<i class="fa fa-link aa"></i>QUICK LINKS
+						</a>
+						<div class="dropdown-menu" id="ABC">
+							<a class="dropdown-item" href="#"><i class="fa fa-registered aa"></i>REGISTER</a>
+							<a class="dropdown-item" href="#"><i class="fa fa-sign-in aa"></i>SIGN-IN</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"><i class="fa fa-sticky-note aa"></i>PUBLISH NOTES</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-users aa"></i>OUR TEAM
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center" href="#">
+							<i class="fa fa-address-book aa"></i>CONTACT
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!--SLIDESHOW WITH INDICATORS-->
+	<div class="container slidesed">
+		<div class="row d-block">
+			<div id="carouselExampleIntervals" class="carousel slide" data-interval="2000">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIntervals" data-slide-to="0"class="active"></li>
+					<li data-target="#carouselExampleIntervals" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIntervals" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIntervals" data-slide-to="3"></li>
+					<li data-target="#carouselExampleIntervals" data-slide-to="4"></li>
+					<li data-target="#carouselExampleIntervals" data-slide-to="5"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item bb active">
+						<img class="d-block w-100 bb" src="timt1.jpg"/>
+					</div>
+					<div class="carousel-item bb">
+						<img class="d-block w-100 bb" src="timt2.jpg"/>
+					</div>
+					<div class="carousel-item bb">
+						<img class="d-block w-100 bb" src="timt3.jpg"/>
+					</div>
+					<div class="carousel-item bb">
+						<img class="d-block w-100 bb" src="timt4.jpg"/>
+					</div>
+					<div class="carousel-item bb">
+						<img class="d-block w-100 bb" src="timt5.jpg"/>
+					</div>
+					<div class="carousel-item bb">
+						<img class="d-block w-100 bb" src="timt6.jpg"/>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIntervals" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIntervals" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!--NOTES SEARCH-->
+		<div class="container" id="XYZ">
+			<div class="row justify-content-around bg-warning" style="border:5px solid red">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12 mt-2">
+							<h1 class="px-2 py-4 text-center text-success">One Way stop for notes and more</h1>
+							<h2 class="px-2 py-2 text-center text-danger">NOTICES</h2>
+							<p class="px-2 py-2 text-center">Check out the latest notices being published by TIMT institute.
+							Get all important notices of your college anytime.
+							</p>
+							<h2 class="px-2 py-2 text-center text-danger">NOTES</h2>
+							<p class="px-2 py-2 text-center" style="text-align:justify">Find the notes and previous years examination 
+							papers for all semesters of BCA,MCA,BBA,MBA.Additionaly,class asssignments 
+							and lab work to get you going for that perfect grade.
+							</p>
+							<h2 class="px-2 py-2 text-center text-danger">FACULTY AND SOCITIES AT TIMT</h2>
+							<p class="px-2 py-2 text-center">Myriad of societies and our experienced faculty make TIMT what it is.
+							Read on to find out about your honorable professors, society events 
+							and much more!A single platform that presents latest technological releases,
+							thought provoking poetries and the latest trends in the campus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt-4 vv">
+					<div class="row justify-content-center">
+						<div class="col-md-2 ml-5 px-2 py-2 oo">
+							<img src="search.jpg" width="50px" height="50px"/>
+						</div>
+						<div class="col-md-8 px-2 py-2 ll">
+							<h5 class="px-2 py-2 text-dark " style="font-size:20px">Search for notes</h5>
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="col-md-10 mt-5 mx-5">
+							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+								<option selected class="px-5 mx-5">--------------Department--------------</option>
+								<option>BBA</option>
+								<option>BCA</option>
+								<option>MBA</option>
+								<option>MCA</option>
+							</select>
+						</div>
+						<div class="col-md-10 mt-5 mx-5">
+							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+								<option selected>----------------Semester--------------</option>
+								<option value="1st">1st Semester</option>
+								<option value="2nd">2nd Semester</option>
+								<option value="3rd">3rd Semester</option>
+								<option value="4th">4th Semester</option>
+								<option value="5th">5th Semester</option>
+								<option value="6th">6th Semester</option>
+							</select>
+						</div>
+						<div class="col-md-10 mt-5 mx-5">
+							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+								<option selected>-----------------Subject-------------------</option>
+								<option value="C++">C++</option>
+								<option value="DS">Data Structures</option>
+								<option value="CA">Computer Architecture</option>
+								<option value="DBMS">DBMS</option>
+								<option value="SE">Software Engineering</option>
+								<option value="NA">Numerical Analysis</option>
+							</select>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-5">
+						<button class="btn btn-primary">CHECK FOR NOTES</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mx-2 my-3 ww">
+						<div class="row justify-content-center">
+							<div class="col-md-1 oo">
+								<img src="search.jpg" class="ml-5" width="50px" height="50px"/>
+							</div>
+							<div class="col-md-4 ll px-5">
+								<h5 class="py-2 px-5 text-dark" style="font-size:20px">Search for notes</h5>
+							</div>
+						</div>
+						<hr/>
+						<div class="row justify-content-center">
+							<div class="col-md-5 mt-5 mx-5">
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected class="px-5 mx-5">-----Department-----</option>
+									<option>BBA</option>
+									<option>BCA</option>
+									<option>MBA</option>
+									<option>MCA</option>
+								</select>
+							</div>
+							<div class="col-md-5 mt-5 mx-5">
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected>-------Semester-------</option>
+									<option value="1st">1st Semester</option>
+									<option value="2nd">2nd Semester</option>
+									<option value="3rd">3rd Semester</option>
+									<option value="4th">4th Semester</option>
+									<option value="5th">5th Semester</option>
+									<option value="6th">6th Semester</option>
+								</select>
+							</div>
+							<div class="col-md-5 mt-5 mx-5">
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+									<option selected>-------Subject-------</option>
+									<option value="C++">C++</option>
+									<option value="DS">Data Structures</option>
+									<option value="CA">Computer Architecture</option>
+									<option value="DBMS">DBMS</option>
+									<option value="SE">Software Engineering</option>
+									<option value="NA">Numerical Analysis</option>
+								</select>
+							</div>
+						</div>
+						<div class="row justify-content-center mt-5">
+							<button class="btn btn-primary">CHECK FOR NOTES</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center bg-danger">
+				<div class="col-md-6 text-center bg-secondary">
+					<div class="row">
+						<div class="col-md-12 mt-5 text-white">
+							<h5 style="font-size:30px">Latest on TIMT updates</h5>
+							<button class="btn btn-outline-light mt-4">
+								VIEW ALL UPDATES
+							</button>
+						</div>
+					</div><br/><br/><hr/>
+					<div class="row mb-5">
+						<div class="col-md-12 mt-5 text-white">
+							<h5 style="font-size:30px">View our TOPPERS</h5>
+							<button class="btn btn-outline-light mt-4">
+								VIEW TOPPERS
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 text-white" style="background-color:black">
+				<h1 class="mt-3 ml-3">ABOUT US</h1>
+				<img src="Mukand.jpg" class="img-container" width="200px" height="70px" style="margin:20px 0px 0px 20px;"/>
+				<p class="px-3 py-5 text-justify">
+					Mukand,the Socio-Academic Portal of TIMT, is the most frequently visited 
+					website of TIMT. It was started out by a team of two enthusiastic students (DHEERAJ
+					& VARUN) with an aim to provide a holistic solution to all student needs; those that 
+					are encountered during these three crucial years of college. 
+					In short - We aim to make the life of every TIMTian simpler & turn these three years 
+					into a smoother ride!
+				</p>
+				<div class="M">
+					<img src="location.jpg" width=30px height=30px style="margin:20px 0px 0px 20px"/>
+					</div>
+					<div class="N" style="color:white">TIMT,YAMUNA NAGAR</div>
+					<br/><hr/>
+					<div class="M">
+					<img src="call.jpg" width=30px height=30px style="margin:20px 0px 0px 20px"/>
+					</div>
+					<div class="N" style="color:white">Call Us: 01732-22457</div>
+					<br/><hr/>
+					<div class="M">
+					<img src="message.jpg" width=30px height=30px style="margin:20px 0px 0px 20px"/>
+					</div>
+					<div class="N" style="color:white">vikas.daryal@timt.ac.in</div>
+					<br/><br/><br/><br/><hr style="clear:both"/>
+			</div>
+			<div class="col-md-6 text-white text-center" style="background-color:black">
+				<h1 class="mt-3">Quick Links</h1>
+					<ol class="text-center">
+						<li><a href="#">Notices</a></li>
+						<li><a href="#">Datesheets</a></li>
+						<li><a href="#">Results</a></li>
+						<li><a href="#">Notes</a></li>
+						<li><a href="#">Exam papers</a></li>
+						<li><a href="#">Syllabus</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Disclamer</a></li>
+					</ol>
+			</div>
+		</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
